@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/validation.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="logoimg" src="images/assortedaceslogo.png" alt="Assorted Aces Logo"/>
+      <h1>The Assorted Aces</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav_bar">About Us</a></li>
+          <li><a href="gallery.html" class="nav_bar">Gallery</a></li>
+          <li><a href="teams.html" class="nav_bar">Teams</a></li>
+          <li><a href="upcoming.html" class="nav_bar">Upcoming</a></li>
+          <li><a href="contactus.html" class="nav_bar current_page">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <h2>Scheduling a Performance</h2>
+        <h3>Contact</h3>
+          <p>Email: <a href="mailto:assortedaces@gmail.com">assortedaces@gmail.com</a></p>
+          <p>Subject Line: "Performance Request"</p>
+
+        <h3>Requirements to Schedule a Performance</h3>
+          <ol>
+            <li><p>Let us know the performance date and time.</p></li>
+            <li><p>How long do you want us to perform for?</p></li>
+            <li><p>Additional ammenities (food for performing, etc).</p></li>
+          </ol>
+
+        <section>
+          <h3>Join Our ListServ!</h3>
+          <p>Stay up to date on any updates, information, and workshops<p>
+
+          <form id="listserv" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+            <div class="formField">
+              <label for="name" class="align">Name: </label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required/>
+              <span class="errorMessage hidden" id="nameError">
+                <strong>Please enter your name!</strong>
+              </span>
+            </div>
+
+            <div class="formField">
+              <label for="email" class="align">Email: </label>
+              <input type="email" id="email" name="email" placeholder="Your Email"  required/>
+              <span class="errorMessage hidden" id="noEmailError">
+                  Please enter your email!
+              </span>
+              <span class="errorMessage hidden" id="emailInvalError">
+                  Please enter a valid email!
+              </span>
+            </div>
+
+            <button type="submit" class="submit">Join!</button>
+          </form>
+        </section>
+    </main>
+
+  </body>
+</html>

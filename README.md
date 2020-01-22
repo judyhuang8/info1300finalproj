@@ -1,2 +1,14 @@
-# info1300finalproj
-This is the final project for INFO 1300. It is a website for our client, the Assorted Aces. It was made by Gracie Jing, Jessica Lu, Connie Huang, and Judy Huang.
+# Project 4
+
+See the course web page for the project's requirements.
+
+# Submission Instructions
+
+See the respective **submit-_milestone_.md** file for each submission.
+
+| Submission  | Instructions                       |
+| ----------- | ---------------------------------- |
+| Milestone 1 | [submit-m1.md](submit-m1.md)       |
+| Milestone 2 | [submit-m2.md](submit-m2.md)       |
+| Milestone 3 | [submit-m3.md](submit-m3.md)       |
+| Final       | [submit-FINAL.md](submit-FINAL.md) |
