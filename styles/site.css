@@ -1,0 +1,339 @@
+@font-face {
+  font-family: 'Satisfy';
+  src: url('fonts/Satisfy-Regular.ttf');
+}
+
+body {
+  font-family: Helvetica;
+  margin: 2%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  font-family: 'Satisfy';
+}
+
+main{
+    width: 90%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h2, h3 {
+  font-family: 'Satisfy';
+}
+
+h3{
+    font-size: 20px;
+    color: #faaa98;
+}
+header ul {
+  margin: 9px 0 0 0;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+/* Styling for nav bar */
+.nav_bar:link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: .28s;
+}
+
+.nav_bar:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: .28s;
+}
+
+.nav_bar:hover {
+  text-decoration: none;
+  color: #000000;
+  transition: .28s;
+}
+
+.nav_bar:active {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: .28s;
+}
+
+.current_page:link {
+  text-decoration: underline;
+}
+
+main{
+    width: 85%;
+    margin: auto;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+/*logo img*/
+#logoimg{
+    margin-right: 10px;
+}
+/* Feedback Form Styling */
+.hidden {
+  display: none !important;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Schedule formatting */
+.schedule h3, p{
+  margin: 5px 0;
+}
+
+/* ticket form formatting */
+#showcaseTicket{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+}
+.formItem{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.formItem label{
+    margin-right: 5px;
+    flex-basis: 30%;
+    text-align: right;
+}
+
+.formItem input{
+    text-align: left;
+}
+
+.paymentForm label{
+    flex-basis: initial;
+}
+
+#paymentSubmit{
+    width: 20%;
+    align-self: flex-end;
+}
+
+/* index.html formatting */
+.eboardimg {
+    display: flex;
+    padding: 10px;
+}
+
+/* teams.html formatting */
+.tab {
+  margin-left: 40px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+/* Source: how to get a grid format https://www.w3schools.com/css/css_grid.asp */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+/* Source: changing images to fit the screen was solved by this website
+  https://stackoverflow.com/questions/6169666/how-to-resize-an-image-to-fit-in-the-browser-window */
+.img-box {
+  display: grid;
+  height: 100%;
+}
+
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid white;
+}
+
+.gallery .center-fit:hover{
+  border: 3px solid #faaa98;
+  transition: 0.28s;
+}
+.close{
+  font-size: 70px;
+  align-self: flex-start;
+  color: white;
+  margin-left: 10px;
+}
+
+.close:hover{
+  color: grey;
+  transition: 0.28s;
+}
+
+/* Source: how Modals should look https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    overflow: auto;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1;
+
+}
+.modalContent{
+    display: flex;
+    padding-top: 10vh;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.modalImg{
+    width: 70%;
+    height: auto;
+}
+.modalImg img{
+    width: 100%;
+
+}
+/* gallery.html formatting */
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+.video_link:link {
+  color: #ff0000;
+}
+
+.video_link:visited {
+  color: #ff0000;
+}
+
+.video_link:hover {
+  color: #b31b1b;
+  transition: .28s;
+}
+
+.video_link:active {
+  color: #b31b1b;
+}
+
+/* join listserv form styling */
+.formField {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.align {
+  width: 7%;
+  text-align: right;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.submit {
+  margin-left: 30%;
+}
+
+/* mobile */
+@media (max-width: 900px){
+
+    /* logo and nav bar styling */
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav li {
+        text-align: center;
+        padding-right: 75px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /* index.html styling */
+    .mission, .general, .whoweare {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        display: inline;
+        flex-grow: 1;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .center-fit {
+        max-width: 50%;
+        max-height: 100vh;
+        margin: auto;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 10px;
+    }
+
+    .close{
+        font-size: 50px;
+    }
+
+    #showcaseTicket{
+        width: 100%;
+    }
+
+    .align{
+        width:auto;
+    }
+
+    .text {
+        margin-top: 0px;
+    }
+
+    .center-fit {
+      max-width: 100%;
+    }
+}
